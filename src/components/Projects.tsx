@@ -14,7 +14,9 @@ export default function Projects() {
       ],
       color: 'blue',
       icon: '📊',
-      date: 'May 2026'
+      date: 'May 2026',
+      repo: 'https://github.com/sharma-manav-ms/HR-ANALYTICS-DASHBOARD',
+      demo: 'https://app.powerbi.com/links/r8xUdqoHU7?ctid=34bd8bed-2ac1-41ae-9f08-4e0a3f11706c&pbi_source=linkShare'
     },
     {
       title: 'Insurance Risk & Claim Analysis',
@@ -28,7 +30,9 @@ export default function Projects() {
       ],
       color: 'red',
       icon: '🛡️',
-      date: 'April 2026'
+      date: 'April 2026',
+      repo: 'https://github.com/sharma-manav-ms/Insurance-Risk-and-Claim-Analysis-Dashboard-using-PowerBI',
+      demo: 'https://app.powerbi.com/links/qvXRmzKMis?ctid=34bd8bed-2ac1-41ae-9f08-4e0a3f11706c&pbi_source=linkShare'
     },
     {
       title: 'Customer Churn Prediction',
@@ -42,7 +46,9 @@ export default function Projects() {
       ],
       color: 'emerald',
       icon: '🤖',
-      date: 'March 2026'
+      date: 'March 2026',
+      repo: 'https://github.com/sharma-manav-ms/Customer-Churn-Prediction-Project',
+      demo: 'https://customer-churn-predictor-project-2001.streamlit.app/'
     }
   ];
 
@@ -113,14 +119,47 @@ export default function Projects() {
               </div>
 
               <div className="flex gap-2">
-                <button className="flex-1 flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
-                  <Github size={16} />
-                  View
-                </button>
-                <button className="flex-1 flex items-center justify-center gap-2 bg-slate-100 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors">
-                  <ExternalLink size={16} />
-                  Demo
-                </button>
+                {project.repo ? (
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+                  >
+                    <Github size={16} />
+                    View
+                  </a>
+                ) : (
+                  <button
+                    disabled
+                    aria-disabled
+                    className="flex-1 flex items-center justify-center gap-2 bg-slate-200 text-slate-400 px-4 py-2 rounded-lg text-sm font-medium cursor-not-allowed"
+                  >
+                    <Github size={16} />
+                    View
+                  </button>
+                )}
+
+                {project.demo ? (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 bg-slate-100 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-200 transition-colors"
+                  >
+                    <ExternalLink size={16} />
+                    Demo
+                  </a>
+                ) : (
+                  <button
+                    disabled
+                    aria-disabled
+                    className="flex-1 flex items-center justify-center gap-2 bg-slate-200 text-slate-400 px-4 py-2 rounded-lg text-sm font-medium cursor-not-allowed"
+                  >
+                    <ExternalLink size={16} />
+                    Demo
+                  </button>
+                )}
               </div>
             </div>
           ))}
