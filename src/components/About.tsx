@@ -1,4 +1,6 @@
 export default function About() {
+  const githubRepoLink = "https://github.com/sharma-manav-ms/Manav-Portfolio.git";
+
   return (
     <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
@@ -18,18 +20,33 @@ export default function About() {
           </p>
 
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-blue-50 rounded-lg p-4 text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">3+</div>
+            <a
+              href={githubRepoLink}
+              target="_blank"
+              rel="noreferrer"
+              className="group block rounded-lg bg-blue-50 p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:bg-blue-100 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              <div className="text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">3+</div>
               <p className="text-slate-700 font-medium">Projects Completed</p>
-            </div>
-            <div className="bg-blue-50 rounded-lg p-4 text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
+            </a>
+            <a
+              href={githubRepoLink}
+              target="_blank"
+              rel="noreferrer"
+              className="group block rounded-lg bg-blue-50 p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:bg-blue-100 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              <div className="text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">5+</div>
               <p className="text-slate-700 font-medium">Certifications</p>
-            </div>
-            <div className="bg-blue-50 rounded-lg p-4 text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">20+</div>
+            </a>
+            <a
+              href={githubRepoLink}
+              target="_blank"
+              rel="noreferrer"
+              className="group block rounded-lg bg-blue-50 p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:bg-blue-100 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              <div className="text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">20+</div>
               <p className="text-slate-700 font-medium">Tools Mastered</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
