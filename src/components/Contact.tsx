@@ -70,7 +70,7 @@ export default function Contact() {
           <h3 className="text-xl font-bold text-slate-900 mb-6">Professional Profiles</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <a
-              href="www.linkedin.com/in/sharma-manav-ms"
+              href="https://www.linkedin.com/in/sharma-manav-ms/?isSelfProfile=false"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-4 border-2 border-slate-200 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition-all group"
