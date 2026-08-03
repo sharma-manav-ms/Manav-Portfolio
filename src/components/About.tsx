@@ -1,5 +1,5 @@
 export default function About() {
-  const projectCompletedLink = "https://example.com/projects";
+  const projectCompletedLink = "https://github.com/sharma-manav-ms";
   const certificationsLink = "https://drive.google.com/drive/folders/1NRHjRN_jtRJzMS9jyXZCNVCnqc_Liab9?usp=sharing";
   const toolsMasteredLink = "https://www.credly.com/users/manav-sharma.8a05f447/edit/skills";
 
@@ -28,7 +28,7 @@ export default function About() {
               rel="noreferrer"
               className="group block rounded-lg bg-blue-50 p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:bg-blue-100 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
-              <div className="text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">3+</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">50+</div>
               <p className="text-slate-700 font-medium">Projects Completed</p>
             </a>
             <a
@@ -37,7 +37,7 @@ export default function About() {
               rel="noreferrer"
               className="group block rounded-lg bg-blue-50 p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:bg-blue-100 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
-              <div className="text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">5+</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">25+</div>
               <p className="text-slate-700 font-medium">Certifications</p>
             </a>
             <a
@@ -46,7 +46,7 @@ export default function About() {
               rel="noreferrer"
               className="group block rounded-lg bg-blue-50 p-4 text-center transition-all duration-200 hover:-translate-y-1 hover:bg-blue-100 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
-              <div className="text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">50+</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">35+</div>
               <p className="text-slate-700 font-medium">Tools Mastered</p>
             </a>
           </div>
